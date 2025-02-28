@@ -17,9 +17,9 @@ export const POST=async(req:NextRequest)=>{
     try{
     const {messages}=await req.json();
      // Concaténez les messages pour former un prompt
-     const prompt = messages
-     .map((msg) => `${msg.role === 'user' ? 'Utilisateur' : 'Assistant'}: ${msg.content}`)
-     .join('\n');
+    //  const prompt = messages
+    //  .map((msg) => `${msg.role === 'user' ? 'Utilisateur' : 'Assistant'}: ${msg.content}`)
+    //  .join('\n');
 
    // Ajoutez le contexte pour Mark Zuckerberg
    const context = `
